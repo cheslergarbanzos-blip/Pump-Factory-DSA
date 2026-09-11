@@ -1,13 +1,13 @@
 /*== Welcome Section ==*/
 .welcome-section {
-  max-width: 900px;
-  margin: 0 auto 28px;
+  max-width: 100%;
+  margin: 0 0 28px 0;
   padding: 20px 0;
 }
 
 .welcome-kicker {
   margin-bottom: 10px;
-  color: #b06e22;
+  color: #0B6F77;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -15,14 +15,14 @@
 
 .welcome-section h1 {
   margin-bottom: 14px;
-  color: #26303d;
+  color: #1A3A3A;
   font-size: clamp(34px, 5vw, 58px);
   line-height: 1.05;
 }
 
 .welcome-section p:last-child {
   max-width: 800px;
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(18px, 2vw, 23px);
   line-height: 1.6;
   margin-top: 16px;
@@ -34,8 +34,8 @@
   grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
   align-items: center;
   gap: 40px;
-  margin: 40px auto;
-  max-width: 1100px;
+  margin: 40px 0;
+  max-width: 100%;
 }
 
 .first-time-separator {
@@ -54,12 +54,12 @@
 
 .first-time-text {
   padding: 30px 0 30px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
 }
 
 .first-time-text h4 {
   margin: 0 0 14px;
-  color: #26303d;
+  color: #1A3A3A;
   font-size: clamp(32px, 4vw, 44px);
   text-transform: uppercase;
   line-height: 1.25;
@@ -67,7 +67,7 @@
 
 .first-time-text p {
   margin: 0;
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(19px, 2vw, 24px);
   line-height: 1.6;
 }
@@ -77,8 +77,8 @@
   margin-top: 22px;
   padding: 16px 30px;
   border-radius: 3px;
-  background: #e6a34d;
-  color: #20251f;
+  background: #0B6F77;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -87,7 +87,7 @@
 }
 
 .first-time-cta:hover {
-  background: #f2bd70;
+  background: #14949E;
   transform: translateY(-2px);
 }
 
@@ -101,8 +101,8 @@
 
 /*== FAQ Section ==*/
 .faq-container {
-  margin: 52px auto;
-  max-width: 1000px;
+  margin: 52px 0;
+  max-width: 100%;
 }
 
 .faq-separator {
@@ -121,7 +121,7 @@
 .faq-item {
   max-width: 100%;
   padding: 28px 0 28px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
   margin: 0 auto;
 }
 
@@ -131,12 +131,12 @@
 
 .faq-item h3 {
   margin-bottom: 8px;
-  color: #26303d;
+  color: #1A3A3A;
   font-size: clamp(21px, 2.5vw, 30px);
 }
 
 .faq-item p {
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(17px, 1.8vw, 21px);
   line-height: 1.6;
 }
@@ -171,19 +171,19 @@
 .safety-equipment-text {
   max-width: 100%;
   padding: 30px 0 30px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
   margin: 0 auto;
 }
 
 .safety-equipment-text h4 {
   margin-bottom: 14px;
-  color: #26303d;
+  color: #1A3A3A;
   font-size: clamp(26px, 3.5vw, 36px);
   line-height: 1.25;
 }
 
 .safety-equipment-text p {
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(16px, 1.8vw, 21px);
   line-height: 1.6;
 }
@@ -214,13 +214,13 @@
 .opening-hours-text {
   max-width: 100%;
   padding: 30px 0 30px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
   margin: 0 auto;
 }
 
 .opening-hours-text p {
   margin-bottom: 16px;
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(16px, 1.8vw, 21px);
   line-height: 1.6;
 }
@@ -231,7 +231,7 @@
 }
 
 .opening-hours-text li {
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(16px, 1.8vw, 21px);
   line-height: 1.8;
   margin-bottom: 8px;
@@ -263,19 +263,19 @@
 .location-text {
   max-width: 100%;
   padding: 30px 0 30px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
   margin: 0 auto;
 }
 
 .location-text p {
   margin-bottom: 16px;
-  color: #4d554f;
+  color: #4B6F6F;
   font-size: clamp(16px, 1.8vw, 21px);
   line-height: 1.6;
 }
 
 .location-text address {
-  color: #26303d;
+  color: #1A3A3A;
   font-size: clamp(16px, 1.8vw, 21px);
   font-style: normal;
   line-height: 1.8;
@@ -307,7 +307,7 @@
 .upcoming-events-text {
   max-width: 100%;
   padding: 30px 0 30px 28px;
-  border-left: 5px solid #e6a34d;
+  border-left: 5px solid #0B6F77;
   margin: 0 auto;
 }
 

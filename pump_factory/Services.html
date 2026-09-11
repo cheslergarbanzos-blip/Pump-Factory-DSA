@@ -20,11 +20,11 @@
             </button>
             <img src="../img/icons/Pump_Logo.png" alt="Pump Factory Logo" class="logo"  width="150">
             <ul class="nav-links">
-                <li><a href="#Home.html">Home</a></li>
-                <li><a href="#Services.html">Services</a></li>
-                <li><a href="#Gallery.html">Gallery</a></li>
-                <li><a href="#About_us.html">About Us</a></li>
-                <li><a href="#Contact_us.html">Contact</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a class="current-page" href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -47,32 +47,67 @@
 
         <section class="services-list">
             <div class="service-item">
+                <div class="service-icon">🧗</div>
                 <h2>Climbing</h2>
                 <p>Explore our diverse climbing routes, designed for all skill levels. Whether you're a beginner or an experienced climber, you'll find challenges that suit your abilities.</p>
             </div>
             <div class="service-item">
+                <div class="service-icon">💪</div>
                 <h2>Fitness Center</h2>
                 <p>Our fitness center is equipped with state-of-the-art equipment to help you build strength, endurance, and flexibility, complementing your climbing experience.</p>
             </div>
             <div class="service-item">
+                <div class="service-icon">🧘</div>
                 <h2>Yoga Classes</h2>
                 <p>Join our yoga classes to improve your balance, flexibility, and mental focus. Our experienced instructors guide you through sessions that enhance your overall well-being.</p>
             </div> 
+        </section>
 
-            <div class="Price-list">
-            <h2 class="price-separator">Price List</h2>
-            <div class="price-text">
-                <ul>
-                    <li>First Time Climbing</li>
-                        <img src="../img/services/firstpass.png" alt="Price List" class="price-image">
-                    <li>Day Passes</li>
-                        <img src="../img/services/day-passes.jpg" alt="Price List" class="price-image">
-                    <li>Monthly Membership</li>
-                        <img src="../img/services/monthly-membership.jpg" alt="Price List" class="price-image">
-                    <li>Other Services</li>
-                        <img src="../img/services/other.jpg" alt="Price List" class="price-image">
+        <!-- First Time Pass Section -->
+        <section class="first-time-pass-section" id="first-time">
+            <div class="first-time-content">
+                <div class="first-time-text">
+                    <h2>Perfect for Beginners</h2>
+                    <h3>First Time Pass</h3>
+                    <p class="description">Starting your climbing journey? Our First Time Pass is designed specifically for new climbers who want to experience climbing at Pump Factory without commitment. It's the perfect introduction to our gym, our community, and the sport of bouldering.</p>
+                    
+                    <div class="benefits-list">
+                        <h4>Benefits Include:</h4>
+                        <ul>
+                            <li>✓ Get two weeks of unlimited climbing and access to all classes and gear upon your first visit.</li>
+                            <li>✓ Safety orientation and proper climbing techniques</li>
+                            <li>✓ Comfortable introduction to our gym environment</li>
+                            <li>✓ Affordable price point for first-time climbers</li>
+                            <li>✓ No equipment rental fees included</li>
+                            <li>✓ Discount voucher for your next visit</li>
+                        </ul>
+                    </div>
+
+                    <p class="cta-text">Ready to start climbing? Book your First Time Pass today and discover why Pump Factory is the best place to begin your climbing adventure!</p>
+                </div>
+                <div class="first-time-image">
+                    <img src="../img/services/firstpass.png" alt="First Time Pass Details" class="first-time-img">
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="price-list-section">
+            <h2 class="price-separator">Price List</h2>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h3>Day Passes</h3>
+                    <img src="../img/services/day-passes.jpg" alt="Day Passes Price" class="price-image">
+                </div>
+                <div class="price-card">
+                    <h3>Monthly Membership</h3>
+                    <img src="../img/services/monthly-membership.jpg" alt="Monthly Membership Price" class="price-image">
+                </div>
+                <div class="price-card">
+                    <h3>Other Services</h3>
+                    <img src="../img/services/other.jpg" alt="Other Services Price" class="price-image">
+                </div>
+            </div>
+        </section>
 
     </main>
 
