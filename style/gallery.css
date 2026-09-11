@@ -50,3 +50,40 @@
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(26, 58, 58, 0.25);
 }
+
+/* Gallery Filters */
+.gallery-filters {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0 30px 0;
+  padding: 0 30px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background: #ffffff;
+  border: 2px solid #14949E;
+  color: #0B6F77;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-btn:hover {
+  background: #14949E;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #0B6F77;
+  color: #ffffff;
+  border-color: #0B6F77;
+}

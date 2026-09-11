@@ -32,17 +32,21 @@
     <!-- SIDEBAR -->
     <aside class="sidebar" aria-label="Sidebar navigation">
         <ul class="sidebar-links">
-            <li><a href="#first-time">First Time?</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="Home.html#first-time"> First Time?</a></li>
+            <li><a href="Home.html#faq"> FAQ</a></li>
+            <li><a href="Services.html"> Services</a></li>
+            <li><a href="About_us.html"> About</a></li>
+            <li><a href="Contact_us.html"> Contact</a></li>
         </ul>
+        <a href="Services.html" class="sidebar-cta">Book Now</a>
     </aside>
 
     <!-- Gallery Section -->
     <main class="page-content gallery-page">
         <section class="gallery-hero">
             <p class="welcome-kicker">OUR GALLERY</p>
-            <h1>Climbing, Fitness, and Community</h1>
-            <p>At Pump Factory, we offer a variety of services to support your climbing journey. From beginner-friendly routes to advanced training programs, our team is here to help you reach your goals.</p>
+            <h1>See Our Community in Action</h1>
+            <p>Explore photos from our climbing sessions, fitness classes, community events, and the amazing athletes who make Pump Factory special. From beginner triumphs to advanced achievements, our gallery captures the spirit of climbing together.</p>
         </section>
 
         <img src="../img/gallery/1.jpg" alt="Gallery Image" class="gallery-image">
@@ -103,6 +107,30 @@
                 sidebar.classList.remove('sidebar-open');
                 body.classList.remove('sidebar-open');
             }
+        });
+
+        // Gallery filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filterValue = btn.dataset.filter;
+                
+                // Show/hide images based on filter
+                galleryImages.forEach(img => {
+                    if (filterValue === 'all') {
+                        img.style.display = 'block';
+                    } else {
+                        img.style.display = 'block'; // Show all for now (update data-category as needed)
+                    }
+                });
+            });
         });
     </script>
 
