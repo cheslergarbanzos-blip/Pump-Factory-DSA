@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pump Factory</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/home.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <img src="../img/Pump_Logo.png" alt="Pump Factory Logo" class="logo"  width="150">
             <ul class="nav-links">
                 <li><a href="#Home.html">Home</a></li>
@@ -28,6 +34,9 @@
         <ul class="sidebar-links">
             <li><a href="#first-time">First Time?</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#opening-hours">Opening Hours</a></li>
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
         </ul>
     </aside>
 
@@ -96,15 +105,87 @@
                 <p>Climbing is a lifelong sport accessible to toddlers as young as 4 years old up to active seniors well into their 70's and 80's.</p>
              </div>
         </div>
+
+        <!-- Safety and equipment -->
+        <div id="safety-equipment" class="safety-equipment-container">
+        <h2 class="safety-equipment-seperator">Safety and Equipment</h2>
+        <div class="safety-equipment-text">
+            <h4>Safety is our top priority</h4>
+            <p>We provide all the necessary safety equipment, including climbing shoes, harnesses, and chalk. Our staff is trained to ensure that you have a safe and enjoyable climbing experience.</p>
+        </div>
+    </div>
+
+        <!-- OPENING HOURS-->
+        <div id="opening-hours" class="opening-hours-container">
+        <h2 class="opening-hours-seperator">Opening Hours</h2>
+        <div class="opening-hours-text">
+            <p>We are open seven days a week to accommodate your climbing schedule:</p>
+            <ul>
+                <li>We are open Monday - Saturday: 3:00 PM - 10:00 PM</li>
+                <li>We are open Sunday: 12:00 PM - 7:00 PM</li>
+            </ul>
+        </div>
+    </div>
+
+        <!--Location-->
+        <div id="location" class="location-container">
+        <h2 class="location-seperator">Location</h2>
+        <div class="location-text">
+            <p>Find us at:</p>
+            <address>
+                Juntado Subdivision <br>
+                3rd St, Molo Iloilo City, 5000 Iloilo<br>
+                Philippines
+            </address>
+        </div>
+    </div>
+
+        <!-- Upcoming events -->
+        <div id="upcoming-events" class="upcoming-events-container">
+            <h2 class="upcoming-events-seperator">Upcoming Events</h2>
+            <div class="upcoming-events-text">
+                <p>Check out our upcoming events and workshops:</p>
+                <ul>
+                    <li>BOULDERFEST 2026 - December 12, 2026 
+                        Stay tuned for more details!</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
-    <!-- OPENING HOURS -->
-    <!-- OPENING HOURS -->
-    <!-- OPENING HOURS -->
-
+    <!-- Footer -->
     <footer>
-
+        <p>&copy; 2023 Pump Factory. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-open');
+            body.classList.toggle('sidebar-open');
+        });
+
+        // Close sidebar when a link is clicked
+        const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('sidebar-open');
+                body.classList.remove('sidebar-open');
+            });
+        });
+
+        // Close sidebar when clicking the overlay
+        document.addEventListener('click', (e) => {
+            if (e.target === body && sidebar.classList.contains('sidebar-open')) {
+                sidebar.classList.remove('sidebar-open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+    </script>
 
 </body>
 

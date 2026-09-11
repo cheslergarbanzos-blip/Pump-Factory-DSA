@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pump Factory</title>
+    <link rel="stylesheet" href="../style/about.css">
     <link rel="stylesheet" href="../style/styles.css">
+    
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <img src="../img/Pump_Logo.png" alt="Pump Factory Logo" class="logo"  width="150">
             <ul class="nav-links">
                 <li><a href="Home.html">Home</a></li>
@@ -56,5 +63,34 @@
             </ul>
         </section>
     </main>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.body;
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-open');
+            body.classList.toggle('sidebar-open');
+        });
+
+        // Close sidebar when a link is clicked
+        const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('sidebar-open');
+                body.classList.remove('sidebar-open');
+            });
+        });
+
+        // Close sidebar when clicking the overlay
+        document.addEventListener('click', (e) => {
+            if (e.target === body && sidebar.classList.contains('sidebar-open')) {
+                sidebar.classList.remove('sidebar-open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+    </script>
 
 </body>

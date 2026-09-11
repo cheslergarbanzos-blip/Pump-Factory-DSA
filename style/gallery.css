@@ -1,0 +1,49 @@
+/*== Gallery Page Styles ==*/
+.gallery-page {
+  max-width: 1200px;
+}
+
+.gallery-hero {
+  max-width: 850px;
+  padding: 36px 0 48px;
+  margin-bottom: 32px;
+}
+
+.gallery-hero h1 {
+  margin-bottom: 18px;
+  color: #26303d;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.05;
+}
+
+.gallery-hero p {
+  color: #4d554f;
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.65;
+}
+
+.gallery-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-page .gallery-hero {
+  grid-column: 1 / -1;
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(32, 37, 31, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(32, 37, 31, 0.25);
+}
