@@ -1,12 +1,13 @@
 /*== Gallery Page Styles ==*/
-.gallery-page {
-  max-width: 1200px;
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .gallery-hero {
-  max-width: 850px;
-  padding: 36px 0 48px;
-  margin-bottom: 32px;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  padding: 40px 0 20px;
 }
 
 .gallery-hero h1 {
@@ -24,8 +25,10 @@
 
 .gallery-page {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .gallery-page .gallery-hero {
@@ -35,10 +38,10 @@
 
 .gallery-image {
   width: 100%;
-  height: 250px;
+  height: 280px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(32, 37, 31, 0.15);
+  box-shadow: 0 6px 16px rgba(32, 37, 31, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }

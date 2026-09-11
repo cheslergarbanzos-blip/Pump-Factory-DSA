@@ -1,7 +1,8 @@
 /*== Welcome Section ==*/
 .welcome-section {
-  max-width: 850px;
-  padding: 18px 0 8px;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  padding: 20px 0;
 }
 
 .welcome-kicker {
@@ -20,10 +21,11 @@
 }
 
 .welcome-section p:last-child {
-  max-width: 720px;
+  max-width: 800px;
   color: #4d554f;
   font-size: clamp(18px, 2vw, 23px);
   line-height: 1.6;
+  margin-top: 16px;
 }
 
 /*== First Time Section Styles ==*/
@@ -31,24 +33,27 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
   align-items: center;
-  gap: 32px;
-  margin-top: 28px;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1100px;
 }
 
 .first-time-separator {
   grid-column: 1 / -1;
-  width: calc(100% + 70px);
-  margin-left: -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 60px 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/firstbg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/firstbg.jpg') center / cover;
 }
 
 .first-time-text {
-  padding: 22px 0 22px 24px;
+  padding: 30px 0 30px 28px;
   border-left: 5px solid #e6a34d;
 }
 
@@ -96,28 +101,32 @@
 
 /*== FAQ Section ==*/
 .faq-container {
-  margin-top: 52px;
+  margin: 52px auto;
+  max-width: 1000px;
 }
 
 .faq-separator {
-  width: calc(100% + 70px);
-  margin: 0 0 28px -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 60px 24px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/faqbg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/faqbg.jpg') center / cover;
 }
 
 .faq-item {
-  max-width: 900px;
-  padding: 22px 0 22px 24px;
+  max-width: 100%;
+  padding: 28px 0 28px 28px;
   border-left: 5px solid #e6a34d;
+  margin: 0 auto;
 }
 
 .faq-item + .faq-item {
-  margin-top: 18px;
+  margin-top: 24px;
 }
 
 .faq-item h3 {
@@ -142,24 +151,28 @@
 
 /*== Safety and Equipment Section ==*/
 .safety-equipment-container {
-  margin-top: 52px;
+  margin: 52px auto;
+  max-width: 1000px;
 }
 
 .safety-equipment-seperator {
-  width: calc(100% + 70px);
-  margin: 0 0 28px -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 60px 24px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/safetybg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/safetybg.jpg') center / cover;
 }
 
 .safety-equipment-text {
-  max-width: 900px;
-  padding: 22px 0 22px 24px;
+  max-width: 100%;
+  padding: 30px 0 30px 28px;
   border-left: 5px solid #e6a34d;
+  margin: 0 auto;
 }
 
 .safety-equipment-text h4 {
@@ -181,24 +194,28 @@
 
 /*== Opening Hours Section ==*/
 .opening-hours-container {
-  margin-top: 52px;
+  margin: 52px auto;
+  max-width: 1000px;
 }
 
 .opening-hours-seperator {
-  width: calc(100% + 70px);
-  margin: 0 0 28px -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 60px 24px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/opening-hoursbg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/opening-hoursbg.jpg') center / cover;
 }
 
 .opening-hours-text {
-  max-width: 900px;
-  padding: 22px 0 22px 24px;
+  max-width: 100%;
+  padding: 30px 0 30px 28px;
   border-left: 5px solid #e6a34d;
+  margin: 0 auto;
 }
 
 .opening-hours-text p {
@@ -226,24 +243,28 @@
 
 /*== Location Section ==*/
 .location-container {
-  margin-top: 52px;
+  margin: 52px auto;
+  max-width: 1000px;
 }
 
 .location-seperator {
-  width: calc(100% + 70px);
-  margin: 0 0 28px -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 60px 24px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/locationbg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/locationbg.jpg') center / cover;
 }
 
 .location-text {
-  max-width: 900px;
-  padding: 22px 0 22px 24px;
+  max-width: 100%;
+  padding: 30px 0 30px 28px;
   border-left: 5px solid #e6a34d;
+  margin: 0 auto;
 }
 
 .location-text p {
@@ -266,25 +287,28 @@
 
 /*== Upcoming Events Section ==*/
 .upcoming-events-container {
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin: 52px auto 80px;
+  max-width: 1000px;
 }
 
 .upcoming-events-seperator {
-  width: calc(100% + 70px);
-  margin: 0 0 28px -35px;
-  padding: 48px 24px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 60px 24px;
   color: #ffffff;
   font-size: clamp(32px, 5vw, 56px);
   letter-spacing: 1px;
   text-align: center;
-  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/upcoming-eventsbg.jpg') center / cover;
+  background: linear-gradient(rgba(20, 30, 38, 0.45), rgba(20, 30, 38, 0.45)), url('../img/bg/upcoming-eventsbg.jpg') center / cover;
 }
 
 .upcoming-events-text {
-  max-width: 900px;
-  padding: 22px 0 22px 24px;
+  max-width: 100%;
+  padding: 30px 0 30px 28px;
   border-left: 5px solid #e6a34d;
+  margin: 0 auto;
 }
 
 .upcoming-events-text p {
@@ -313,48 +337,30 @@
 @media (max-width: 700px) {
   .first-time-container {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 28px;
+    margin: 30px 0;
   }
 
   .first-time-text {
-    padding: 18px 0 18px 18px;
+    padding: 22px 0 22px 20px;
   }
 
   .first-time-text h4 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .first-time-text p {
-    font-size: 19px;
+    font-size: 18px;
   }
 
-  .first-time-separator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-  }
-
-  .faq-separator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-  }
-
-  .safety-equipment-seperator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-  }
-
-  .opening-hours-seperator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-  }
-
-  .location-seperator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-  }
-
+  .first-time-separator,
+  .faq-separator,
+  .safety-equipment-seperator,
+  .opening-hours-seperator,
+  .location-seperator,
   .upcoming-events-seperator {
-    width: calc(100% + 40px);
-    margin-left: -20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 45px 20px;
   }
 }

@@ -1,11 +1,13 @@
 /*== Contact Page Styles ==*/
 .contact-page {
   max-width: 1100px;
+  margin: 0 auto;
 }
 
 .contact-hero {
-  max-width: 850px;
-  padding: 36px 0 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0 52px;
 }
 
 .contact-hero h1 {
