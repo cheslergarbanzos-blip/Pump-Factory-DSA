@@ -13,14 +13,14 @@
 .about-hero h1 {
   margin-bottom: 18px;
   color: #1A3A3A;
-  font-size: clamp(38px, 6vw, 68px);
+  font-size: 48px;
   line-height: 1.05;
 }
 
 .about-hero > p:last-child,
 .about-story p {
   color: #4B6F6F;
-  font-size: clamp(18px, 2vw, 23px);
+  font-size: 20px;
   line-height: 1.65;
 }
 
@@ -36,7 +36,7 @@
 .about-offers h2 {
   margin-bottom: 18px;
   color: #1A3A3A;
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: 34px;
 }
 
 .about-story p + p {
@@ -54,7 +54,7 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(32, 37, 31, 0.18);
+  box-shadow: 0 8px 20px #20251f2e;
 }
 
 /*== Mission, Vision, Values ==*/
@@ -68,7 +68,7 @@
 .about-mission h2 {
   margin-bottom: 18px;
   color: #1A3A3A;
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: 34px;
 }
 
 .mission-grid {
@@ -82,7 +82,7 @@
   border-top: 5px solid #0B6F77;
   background: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(26, 58, 58, 0.08);
+  box-shadow: 0 2px 8px #1a3a3a14;
 }
 
 .mission-card h3 {
@@ -109,7 +109,7 @@
   border-left: 5px solid #0B6F77;
   background: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(26, 58, 58, 0.08);
+  box-shadow: 0 2px 8px #1a3a3a14;
 }
 
 .offer-list strong,

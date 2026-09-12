@@ -108,9 +108,7 @@ body {
 
 .nav-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  max-width: auto;
   margin: 0 auto;
   padding: 3px 30px 5px 10px;
   gap: 16px;
@@ -137,7 +135,7 @@ body {
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
-  font-family: arial, Helvetica, sans-serif;
+  font-family: inherit;
   transition: color 0.3s ease;
 }
 
