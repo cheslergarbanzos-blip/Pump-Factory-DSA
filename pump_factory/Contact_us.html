@@ -69,9 +69,29 @@
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Contact</label>
+                        <select id="reason" name="reason">
+                            <option value="general">General Inquiry</option>
+                            <option value="booking">Book a Session</option>
+                            <option value="membership">Membership Info</option>
+                            <option value="events">Events &amp; Workshops</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="contact-method" value="email" checked> Email</label>
+                            <label class="radio-option"><input type="radio" name="contact-method" value="phone"> Phone</label>
+                        </div>
+                    </div>
                     <div class="form-group full-width">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group full-width checkbox-group">
+                        <label class="checkbox-option"><input type="checkbox" id="newsletter" name="newsletter"> Sign me up for the newsletter and event updates</label>
                     </div>
                     <button type="submit" class="form-submit">Send Message</button>
                 </form>
@@ -90,17 +110,17 @@
                 <div class="info-item location-item">
                     <img src="../img/icons/location.png" alt="Location icon" class="info-icon">
                     <h3>Location</h3>
-                    <p>Juntado Subdivision, 3rd St, Molo<br>Iloilo City, 5000 Philippines</p>
+                    <p><a href="https://maps.app.goo.gl/kBxQehVKthYkNBwbA" target="_blank" rel="noopener noreferrer">Juntado Subdivision, 3rd St, Molo<br>Iloilo City, 5000 Philippines</a></p>
                 </div>
                 <div class="info-item instagram-item">
                     <img src="../img/icons/instagram.png" alt="Instagram icon" class="info-icon">
                     <h3>Instagram</h3>
-                    <p><a href="#" target="_blank">@thepumpfactory__</a></p>
+                    <p><a href="https://www.instagram.com/thepumpfactory__" target="_blank" rel="noopener noreferrer">@thepumpfactory__</a></p>
                 </div>
                 <div class="info-item facebook-item">
                     <img src="../img/icons/facebook.png" alt="Facebook icon" class="info-icon">
                     <h3>Facebook</h3>
-                    <p><a href="#" target="_blank">The Pump Factory</a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=61554502162958" target="_blank" rel="noopener noreferrer">The Pump Factory</a></p>
                 </div>
             </div>
         </section>
@@ -124,6 +144,37 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Pump Factory</h3>
+                <p>A welcoming bouldering gym and fitness community in Molo, Iloilo City.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="Contact_us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61554502162958" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/thepumpfactory__" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="mailto:thepumpfactoryiloilo@gmail.com">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pump Factory. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
         // Hamburger menu toggle
@@ -161,11 +212,14 @@
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const phone = document.getElementById('phone').value;
+                const reason = document.getElementById('reason').value;
+                const contactMethod = document.querySelector('input[name="contact-method"]:checked').value;
+                const newsletter = document.getElementById('newsletter').checked ? 'Yes' : 'No';
                 const message = document.getElementById('message').value;
 
                 // Compose mailto link
                 const subject = 'New Contact Form Submission from ' + name;
-                const bodyText = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message;
+                const bodyText = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nReason: ' + reason + '\nPreferred Contact Method: ' + contactMethod + '\nNewsletter Signup: ' + newsletter + '\n\nMessage:\n' + message;
                 const mailtoLink = 'mailto:thepumpfactoryiloilo@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyText);
 
                 // Open email client

@@ -47,43 +47,50 @@
 }
 
 .gallery-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(26, 58, 58, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(32, 37, 31, 0.22);
 }
 
-/* Gallery Filters */
-.gallery-filters {
+/*== Event Albums ==*/
+.event-albums {
   grid-column: 1 / -1;
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #E0EEF0;
+}
+
+.event-albums h2 {
+  margin-bottom: 20px;
+  color: #1A3A3A;
+  font-size: clamp(26px, 3.5vw, 36px);
+}
+
+.album-list {
   display: flex;
-  gap: 12px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 0 30px 0;
-  padding: 0 30px;
+  gap: 16px;
 }
 
-.filter-btn {
-  padding: 10px 24px;
+.album-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
   background: #ffffff;
-  border: 2px solid #14949E;
-  color: #0B6F77;
-  border-radius: 25px;
-  cursor: pointer;
+  border-left: 5px solid #0B6F77;
+  border-radius: 6px;
+  color: #1A3A3A;
   font-weight: 600;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(26, 58, 58, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.filter-btn:hover {
-  background: #14949E;
-  color: #ffffff;
+.album-card:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 58, 58, 0.15);
 }
 
-.filter-btn.active {
-  background: #0B6F77;
-  color: #ffffff;
-  border-color: #0B6F77;
+.album-icon {
+  font-size: 22px;
 }
